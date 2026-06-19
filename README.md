@@ -9,3 +9,15 @@ Este projeto foi desenvolvido como parte dos meus estudos em Engenharia de Softw
 - **Contagem Automática:** Se uma palavra já existe na árvore, o algoritmo apenas incrementa o seu contador interno, otimizando o uso de memória.
 - **Caminhamento Em-Ordem (In-Order):** Exibição dos dados do terminal de forma ordenada alfabeticamente.
 - **Gerenciamento de Memória:** Liberação total da memória alocada (`free`) ao final da execução.
+
+## 🛠️ Estrutura do Código
+
+O coração do projeto baseia-se na seguinte estrutura de nó:
+
+```c
+typedef struct No {
+    char palavra[TAM];
+    int cont;
+    struct No *esq;
+    struct No *dir;
+} No;
